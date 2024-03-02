@@ -1,0 +1,30 @@
+.App-header {
+  display: flex;
+  .logo {
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    img {
+      width: 150px;
+    }
+  }
+  .nav-header {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: right;
+  }
+  .nav-item {
+    font-size: 20px;
+    font-weight: 500;
+    a {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

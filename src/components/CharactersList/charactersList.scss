@@ -1,0 +1,50 @@
+.characters-block {
+  width: 72%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+}
+
+.character-card {
+  height: 450px;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 6px rgb(207, 213, 169);
+  background-color: #fefefe;
+}
+.character-card:hover {
+  box-shadow: 2px 3px 10px 4px rgb(0, 0, 0);
+}
+.character-active:hover {
+  border: 1px solid red;
+}
+.character-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 5px 5px 0px 0px;
+}
+.character-name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.topage {
+  display: none;
+}
+.show {
+  display: block;
+}
+.character-button {
+  margin: 25px auto 0;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c20606;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}

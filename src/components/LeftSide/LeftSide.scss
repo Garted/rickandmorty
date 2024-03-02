@@ -1,0 +1,51 @@
+.left-side {
+  width: 28%;
+  min-height: 500px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 3px 10px 6px rgb(207, 213, 169);
+  padding: 10px;
+}
+.single-char-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.single-char-block {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single-char-img {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+}
+.single-char-name {
+  text-align: center;
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.episode-item {
+  box-shadow: 3px 4px 5px 4px rgb(250, 2, 2);
+}
+
+.episode-item-name {
+  color: blue;
+  font-size: 20px;
+  font-weight: 500;
+}
+.episode-item-queque {
+  color: rgb(161, 15, 163);
+  font-size: 20px;
+  font-weight: 500;
+}

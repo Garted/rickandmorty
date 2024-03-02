@@ -1,0 +1,20 @@
+.character-list-button {
+  margin: 10px auto 0;
+  width: 140px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: #a40404;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.character-list-button:hover {
+  border: 1px solid black;
+}
+
+.character-list-button:active {
+  background-color: #494545;
+}

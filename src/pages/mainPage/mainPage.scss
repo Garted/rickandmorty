@@ -1,0 +1,23 @@
+.main {
+  margin-top: 40px;
+}
+
+.about {
+  display: flex;
+}
+.descr-block {
+  padding: 10px;
+  width: 50%;
+}
+.photo-block {
+  overflow: hidden;
+  width: 50%;
+}
+
+.main-flex {
+  margin-top: 30px;
+  display: flex;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 2px 3px 10px 4px red;
+}
