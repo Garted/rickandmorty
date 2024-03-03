@@ -4,9 +4,9 @@ import { useState } from "react";
 
 import useRickAndMortyService from "../../service/RickAddMortyService";
 
-const LeftSide = ({ singleChar }) => {
-  const OneCharInfo = () => {
-    const { id, name, img, status, gender, species, location } = singleChar[0];
+const LeftSide = ({ idChar, chars }) => {
+  const OneCharInfo = ({ idChar, chars }) => {
+    const { img, name, species, status, gender, location } = chars[idChar];
 
     const { getEpisodes } = useRickAndMortyService();
 
@@ -15,27 +15,31 @@ const LeftSide = ({ singleChar }) => {
     const setttt = (data) => {
       setEpisodes(data);
     };
-
-    const showEpisodes = (id) => {
-      getEpisodes(id).then(setttt);
+    const showEpisodes = (idChar) => {
+      getEpisodes(idChar).then(setttt);
     };
 
     const EpisodesList = () => {
       return (
         <div className="episodes-list">
-          {episodes.map((item) => (
-            <div key={item.id} className="episode-item">
-              <div className="episode-item-name">{item.name}</div>
-              <div className="episode-item-queque">{item.num}</div>
-            </div>
-          ))}
+          <div className="episode-list-title">Эпизоды с персонажем:</div>
+          {episodes.map((item) => {
+            if (episodes.indexOf(item) < 10) {
+              return (
+                <div key={item.id} className="episode-item">
+                  <div className="episode-item-name">{item.name}</div>
+                  <div className="episode-item-queque">{item.num}</div>
+                </div>
+              );
+            }
+          })}
         </div>
       );
     };
 
     return (
       <>
-        <div key={id} className="single-char-info">
+        <div key={idChar} className="single-char-info">
           <div className="single-char-block">
             <img className="single-char-img" src={img} alt={name} />
             <div className="single-char-name name">{name}</div>
@@ -69,9 +73,9 @@ const LeftSide = ({ singleChar }) => {
           {episodes === null ? null : <EpisodesList />}
           <button
             onClick={() => {
-              showEpisodes(id);
+              showEpisodes(idChar);
             }}
-            className="single-char-button-episodes"
+            className="button leftside-button"
           >
             SHOW EPISODES
           </button>
@@ -82,7 +86,13 @@ const LeftSide = ({ singleChar }) => {
 
   return (
     <div className="left-side">
-      {singleChar === null ? <Skeleton /> : <OneCharInfo />}
+      <div className="left-side-wrap">
+        {idChar === null ? (
+          <Skeleton />
+        ) : (
+          <OneCharInfo idChar={idChar} chars={chars} />
+        )}
+      </div>
     </div>
   );
 };

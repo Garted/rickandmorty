@@ -2,26 +2,24 @@ import { useState, useEffect } from "react";
 import "./charactersList.scss";
 import useRickAndMortyService from "../../service/RickAddMortyService";
 import Loading from "../Loading";
+import { Link } from "react-router-dom";
 
 import CharacterListButton from "../buttons/CharacterListButton/CharacterListButton";
 
-const CharacterList = ({ setSingleChar }) => {
+const CharacterList = ({ chars, setChars, setIdChar }) => {
   const { getSomeCharacters } = useRickAndMortyService();
-
-  const [characters, setCharacters] = useState(null);
 
   useEffect(() => {
     getCharacters();
   }, []);
 
-  const onCharactersLoaded = (chars) => {
-    if (characters === null) {
-      setCharacters(() => chars);
+  const onCharactersLoaded = (characters) => {
+    if (chars === null) {
+      setChars(() => characters);
     } else {
-      setCharacters(() => [...characters, ...chars]);
+      setChars(() => [...chars, ...characters]);
     }
   };
-
   const getCharacters = () => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     getSomeCharacters(arr).then(onCharactersLoaded);
@@ -30,26 +28,23 @@ const CharacterList = ({ setSingleChar }) => {
   const getMoreCharacters = () => {
     let arr = [];
     for (let i = 1; i <= 9; i++) {
-      arr.push(characters.length + i);
+      arr.push(chars.length + i);
     }
     getSomeCharacters(arr).then(onCharactersLoaded);
   };
 
   const [hover, sethoverEffect] = useState(null);
-
   const hoverEffectAdd = (i) => {
     sethoverEffect(i);
   };
   const hoverEffectFade = () => {
     sethoverEffect(null);
   };
-
-  const passChar = (id) => {
-    setSingleChar(characters.filter((item) => item.id === id));
+  const passId = (i) => {
+    setIdChar(i - 1);
   };
-
-  const Characters = ({ characters }) => {
-    return characters.map((item) => (
+  const Characters = ({ chars }) => {
+    return chars.map((item) => (
       <div
         key={item.id}
         onMouseEnter={() => {
@@ -58,33 +53,27 @@ const CharacterList = ({ setSingleChar }) => {
         onMouseLeave={() => {
           hoverEffectFade();
         }}
-        onClick={() => {
-          passChar(item.id);
-        }}
+        onClick={() => passId(item.id)}
         className="character-card"
       >
         <img className="character-img" src={item.img} alt={item.name} />
         <div className="character-name name">{item.name}</div>
-        <button
-          className={
-            hover === item.id
-              ? "character-button topage show"
-              : "character-button topage"
-          }
-        >
-          TO PAGE
-        </button>
+        <Link className="linkto" to={"single"}>
+          <button
+            className={
+              hover === item.id ? "button topage show" : "button topage"
+            }
+          >
+            TO PAGE
+          </button>
+        </Link>
       </div>
     ));
   };
 
   return (
     <div className="characters-block">
-      {characters === null ? (
-        <Loading />
-      ) : (
-        <Characters characters={characters} />
-      )}
+      {chars === null ? <Loading /> : <Characters chars={chars} />}
       <CharacterListButton getMoreCharacters={getMoreCharacters} />
     </div>
   );

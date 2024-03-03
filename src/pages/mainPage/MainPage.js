@@ -5,10 +5,10 @@ import CharacterList from "../../components/CharactersList/CharacterList";
 import LeftSide from "../../components/LeftSide/LeftSide";
 import { useState } from "react";
 
-const Main = () => {
-  const [singleChar, setSingleChar] = useState(null);
+const Main = ({ chars, setChars }) => {
+  const [idChar, setIdChar] = useState(null);
 
-  console.log(singleChar);
+  console.log(chars);
 
   console.log("render main page");
   return (
@@ -16,8 +16,12 @@ const Main = () => {
       <RandomChar />
 
       <div className="main-flex">
-        <CharacterList setSingleChar={setSingleChar} />
-        <LeftSide singleChar={singleChar} />
+        <CharacterList
+          chars={chars}
+          setChars={setChars}
+          setIdChar={setIdChar}
+        />
+        <LeftSide idChar={idChar} chars={chars} />
       </div>
     </section>
   );

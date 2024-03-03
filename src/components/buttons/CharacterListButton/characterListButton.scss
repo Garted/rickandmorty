@@ -1,20 +1,24 @@
-.character-list-button {
-  margin: 10px auto 0;
-  width: 140px;
+@import "../../../variables/variables.scss";
+
+.button {
+  width: 125px;
   height: 50px;
   border: none;
   border-radius: 10px;
   color: aliceblue;
-  background-color: #a40404;
+  background-color: $button-color;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
 }
 
-.character-list-button:hover {
+.button:hover {
   border: 1px solid black;
 }
 
-.character-list-button:active {
-  background-color: #494545;
+.button:active {
+  background-color: #e38080;
+}
+.character-list-button {
+  margin: 0 auto;
 }

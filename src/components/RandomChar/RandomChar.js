@@ -66,7 +66,10 @@ const RandomChar = () => {
       <div className="renew_block">
         <div className="renew-text">Random character for today!</div>
         <div className="renew-text">Or choose another one</div>
-        <button className="renew-button" onClick={() => clickChange()}>
+        <button
+          className="button random-char-button"
+          onClick={() => clickChange()}
+        >
           CHANGE
         </button>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./characterListButton.scss";
 
 const CharacterListButton = ({ getMoreCharacters }) => {
@@ -6,7 +7,7 @@ const CharacterListButton = ({ getMoreCharacters }) => {
       onClick={() => {
         getMoreCharacters();
       }}
-      className="character-list-button"
+      className="button character-list-button"
     >
       Show More
     </button>

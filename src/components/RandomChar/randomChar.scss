@@ -1,3 +1,5 @@
+@import "../../variables/variables.scss";
+
 .random-char {
   display: flex;
   justify-content: space-between;
@@ -6,7 +8,7 @@
 .char-img {
   width: 180px;
   height: 180px;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px;
 }
 .char-block {
   padding: 20px;
@@ -14,92 +16,45 @@
   display: flex;
   gap: 30px;
   border-radius: 5px;
-  box-shadow: 3px 4px 10px 3px green;
+  box-shadow: $whiteboxshadow;
   background-color: #fff;
 }
 .description-block {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.char-status {
   font-size: 24px;
   font-weight: 700;
 }
 .alive {
   color: green;
-  font-size: 24px;
-  font-weight: 700;
 }
 .dead {
   color: red;
-  font-size: 24px;
-  font-weight: 700;
 }
 .unknown {
   color: grey;
-  font-size: 24px;
-  font-weight: 700;
-}
-.char-episode {
-  color: blue;
-  font-size: 24px;
-  font-weight: 700;
-}
-.char-gender {
-  font-size: 24px;
-  font-weight: 700;
-}
-.char-species {
-  font-size: 24px;
-  font-weight: 700;
-}
-.char-location {
-  font-size: 24px;
-  font-weight: 700;
 }
 .male {
-  font-size: 24px;
-  font-weight: 700;
   color: brown;
 }
 .female {
-  font-size: 24px;
-  font-weight: 700;
   color: pink;
 }
 .diffrent {
-  font-size: 24px;
-  font-weight: 700;
   color: rgb(9, 243, 223);
 }
 .renew_block {
   padding: 20px;
   width: 45%;
-  box-shadow: 2px 2px 10px 2px rgb(245, 6, 6);
+  box-shadow: $whiteboxshadow;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
 }
 
 .renew-text {
-  color: rgb(0, 0, 0);
+  color: rgb(17, 21, 17);
   font-size: 36px;
   font-weight: 700;
 }
 
-.renew-button {
+.random-char-button {
   margin-top: 25px;
-  width: 120px;
-  height: 50px;
-  border: none;
-  border-radius: 10px;
-  color: aliceblue;
-  background-color: #c20606;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.renew-button:active {
-  background-color: #e38080;
 }
