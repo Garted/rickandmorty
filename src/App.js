@@ -9,18 +9,13 @@ import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
-  const [chars, setChars] = useState(null);
-
   return (
     <div className="wrapp">
       <div className="App">
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route
-              path="/"
-              element={<Main chars={chars} setChars={setChars} />}
-            />
+            <Route path="/" element={<Main />} />
             <Route path="/single" element={<SingleCharacterPage />} />
 
             <Route path="/episodes" element={<Episodes />} />

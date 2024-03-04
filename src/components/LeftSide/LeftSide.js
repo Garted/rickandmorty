@@ -4,7 +4,9 @@ import { useState } from "react";
 
 import useRickAndMortyService from "../../service/RickAddMortyService";
 
-const LeftSide = ({ idChar, chars }) => {
+const LeftSide = ({ ss, setSS }) => {
+  const [ss, setSS] = useState(null);
+
   const OneCharInfo = ({ idChar, chars }) => {
     const { img, name, species, status, gender, location } = chars[idChar];
 

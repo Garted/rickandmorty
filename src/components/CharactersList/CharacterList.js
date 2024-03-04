@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 
 import CharacterListButton from "../buttons/CharacterListButton/CharacterListButton";
 
-const CharacterList = ({ chars, setChars, setIdChar }) => {
+const CharacterList = () => {
   const { getSomeCharacters } = useRickAndMortyService();
+
+  const [chars, setChars] = useState(null);
 
   useEffect(() => {
     getCharacters();
@@ -21,8 +23,10 @@ const CharacterList = ({ chars, setChars, setIdChar }) => {
     }
   };
   const getCharacters = () => {
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    getSomeCharacters(arr).then(onCharactersLoaded);
+    if (chars === null) {
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      getSomeCharacters(arr).then(onCharactersLoaded);
+    }
   };
 
   const getMoreCharacters = () => {
@@ -40,9 +44,11 @@ const CharacterList = ({ chars, setChars, setIdChar }) => {
   const hoverEffectFade = () => {
     sethoverEffect(null);
   };
+
   const passId = (i) => {
-    setIdChar(i - 1);
+    return { aa: i };
   };
+
   const Characters = ({ chars }) => {
     return chars.map((item) => (
       <div
