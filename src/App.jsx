@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/single/:id/:name" element={<SingleCharacterPage />} />
-          <Route path="episodes" element={<Episodes />} />
+          <Route path="/episodes" element={<Episodes />} />
         </Routes>
       </div>
     </div>
