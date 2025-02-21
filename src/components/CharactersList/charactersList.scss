@@ -1,0 +1,102 @@
+@use '../../styles/variables.scss' as *;
+
+.wrap {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  .characters-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    .character-card {
+      height: 450px;
+      max-width: 300px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: $whiteboxshadow;
+      background-color: #fefefe;
+      scale: 1;
+      &:hover {
+        box-shadow: $blackboxshadow;
+      }
+      .character-img {
+        width: 270px;
+        height: 270px;
+        border-radius: 5px;
+      }
+      .character-name {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .char-descr {
+        font-size: 20px;
+        line-height: 130%;
+        .alive {
+          color: green;
+        }
+        .dead {
+          color: red;
+        }
+        .unknown {
+          color: grey;
+        }
+        .male {
+          color: brown;
+        }
+        .female {
+          color: pink;
+        }
+        .human {
+          color: #115405;
+        }
+        .alien {
+          color: #f308cc;
+        }
+        .citadel {
+          color: #5a4356;
+        }
+        .other {
+          color: #480101;
+        }
+        .diffrent {
+          color: rgb(9, 243, 223);
+        }
+      }
+      .linkto {
+        margin: 0 auto;
+        display: block;
+        width: 125px;
+      }
+      @keyframes col {
+        from {
+          scale: 0;
+        }
+        to {
+          scale: 1;
+        }
+      }
+      .button.topage {
+        animation: col 0.7s ease;
+        display: block;
+        margin: 20px auto;
+        scale: 1;
+      }
+    }
+    .character-card.active {
+      scale: 1.03;
+      box-shadow: $blackboxshadow;
+    }
+    .button:hover {
+      border: 1px solid black;
+    }
+
+    .button:active {
+      background-color: #e38080;
+    }
+  }
+}

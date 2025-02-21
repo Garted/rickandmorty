@@ -1,0 +1,59 @@
+@use '../../styles/variables.scss' as *;
+.single-page {
+  height: 100%;
+  .single-page-wrap {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px 6px rgb(207, 213, 169);
+    background-color: #fefefe;
+    gap: 30px;
+    .single-img {
+      border-radius: 5px;
+      width: 350px;
+      height: 350px;
+    }
+    .single-block {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 26px;
+      font-weight: 700;
+      .single-name {
+        color: #450fce;
+      }
+      .alive {
+        color: green;
+      }
+      .dead {
+        color: red;
+      }
+      .unknown {
+        color: grey;
+      }
+      .male {
+        color: brown;
+      }
+      .female {
+        color: pink;
+      }
+      .human {
+        color: #115405;
+      }
+      .alien {
+        color: #f308cc;
+      }
+      .citadel {
+        color: #5a4356;
+      }
+      .other {
+        color: #480101;
+      }
+      .diffrent {
+        color: rgb(9, 243, 223);
+      }
+    }
+  }
+}

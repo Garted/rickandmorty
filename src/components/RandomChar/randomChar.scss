@@ -1,0 +1,73 @@
+@use '../../styles/variables.scss' as *;
+
+.random-char {
+  display: flex;
+  justify-content: space-between;
+  max-height: 285px;
+  .char-block {
+    padding: 20px;
+    width: 45%;
+    display: flex;
+    gap: 30px;
+    border-radius: 5px;
+    box-shadow: $whiteboxshadow;
+    background-color: #fff;
+    .char-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 5px;
+    }
+    .description-block {
+      font-size: 24px;
+      font-weight: 700;
+      .alive {
+        color: green;
+      }
+      .dead {
+        color: red;
+      }
+      .unknown {
+        color: grey;
+      }
+      .male {
+        color: brown;
+      }
+      .female {
+        color: pink;
+      }
+      .human {
+        color: #115405;
+      }
+      .alien {
+        color: #f308cc;
+      }
+      .citadel {
+        color: #5a4356;
+      }
+      .other {
+        color: #480101;
+      }
+      .diffrent {
+        color: rgb(9, 243, 223);
+      }
+    }
+  }
+  .renew_block {
+    padding: 20px;
+    width: 45%;
+    box-shadow: $whiteboxshadow;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .renew-text {
+      color: rgb(17, 21, 17);
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .random-char-button.disable {
+      background-color: rgb(132, 84, 84);
+    }
+  }
+}

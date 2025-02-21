@@ -1,0 +1,88 @@
+@use '../../styles/variables.scss' as *;
+
+.episodes {
+  padding-bottom: 40px;
+  margin-top: 20px;
+  .episodes-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    .episode-single {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      font-display: column;
+      flex-wrap: wrap;
+      border: 2px solid rgb(62, 57, 57);
+      background-color: #ffffff;
+      border-radius: 12px;
+      height: auto;
+      align-items: center;
+      .episode-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        .box {
+          display: flex;
+          gap: 20px;
+          .episode-episode {
+            font-size: 20px;
+          }
+          .episode-name {
+            color: blue;
+            font-size: 20px;
+          }
+
+          .episode-drop {
+            font-size: 20px;
+            color: #26012d;
+          }
+        }
+        .button.episode-heroes {
+          margin-left: auto;
+          height: 40px;
+          width: 230px;
+        }
+      }
+      .person-episode {
+        padding: 20px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+        .lin {
+          .person-item {
+            padding: 12px;
+            border-radius: 5px;
+            box-shadow: $whiteboxshadow;
+            background-color: #fefefe;
+            width: 250px;
+            min-height: 330px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 5px;
+            }
+            .person-name {
+              margin-top: 10px;
+              color: #450fce;
+              font-size: 24px;
+              font-weight: 700;
+              text-align: center;
+            }
+            &:hover {
+              box-shadow: $blackboxshadow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

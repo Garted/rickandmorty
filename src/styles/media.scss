@@ -1,0 +1,668 @@
+@media (min-width: 1261px) {
+  .rickandmorty .container-r {
+    max-width: 1440px;
+  }
+  .rickandmorty {
+    .main {
+      .main-flex {
+        .characters-block {
+          .character-card {
+            .char-descr {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1240px) and (max-width: 1460px) {
+  .rickandmorty .container-r {
+    max-width: 1230px;
+  }
+  .rickandmorty {
+    .App-header {
+      padding: 0px 20px;
+    }
+    .main {
+      margin-top: 20px;
+      padding: 0px 20px;
+      .random-char {
+        .char-block {
+          width: 50%;
+          .description-block {
+            font-size: 22px;
+            line-height: 140%;
+          }
+        }
+        .renew_block {
+          width: 45%;
+          .renew-text {
+            font-size: 28px;
+          }
+        }
+      }
+      .main-flex {
+        padding: 20px;
+        justify-content: space-between;
+        .characters-block {
+          width: 100%;
+          gap: 30px;
+          .character-card {
+            height: 390px;
+            max-width: 250px;
+            padding: 20px;
+            .character-img {
+              width: 210px;
+              height: 210px;
+            }
+            .char-descr {
+              display: none;
+            }
+
+            .linkto {
+              width: 120px;
+            }
+          }
+        }
+        .left-side {
+          width: 25%;
+          .left-side-wrap {
+            .single-char-info {
+              .single-char-block {
+                .single-char-img {
+                  align-self: center;
+                  width: 220px;
+                  height: 220px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .episodes {
+      .episodes-list {
+        padding: 0 20px;
+      }
+    }
+    .single-page {
+      height: 100%;
+      padding: 0 20px;
+    }
+  }
+}
+@media (min-width: 993px) and (max-width: 1239px) {
+  .rickandmorty .container-r {
+    max-width: 960px;
+  }
+  .rickandmorty {
+    .App-header {
+      padding: 0px 20px;
+    }
+    .main {
+      margin-top: 20px;
+      padding: 0px 20px;
+      .random-char {
+        .char-block {
+          width: 60%;
+          .description-block {
+            font-size: 20px;
+            line-height: 140%;
+          }
+        }
+        .renew_block {
+          width: 38%;
+          .renew-text {
+            font-size: 22px;
+          }
+        }
+      }
+      .main-flex {
+        padding: 20px;
+        justify-content: space-between;
+
+        .wrap {
+          width: 65%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+
+          .characters-block {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .character-card {
+              height: 400px;
+              width: 270px;
+              padding: 15px;
+              .character-img {
+                width: 220px;
+                height: 220px;
+              }
+              .char-descr {
+                display: none;
+              }
+              .linkto {
+                width: 120px;
+              }
+            }
+          }
+        }
+        .left-side {
+          width: 30%;
+          .left-side-wrap {
+            .single-char-info {
+              font-size: 18px;
+              .single-char-block {
+                .single-char-img {
+                  align-self: center;
+                  width: 220px;
+                  height: 220px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .episodes {
+      .episodes-list {
+        .episode-single {
+          .episode-wrap {
+            gap: 15px;
+          }
+          .person-episode {
+            padding: 10px 20px 20px 20px;
+            justify-content: space-between;
+
+            .person-item {
+              width: 260px;
+              min-height: 340px;
+            }
+          }
+        }
+      }
+    }
+    .single-page {
+      height: 100%;
+      padding: 0 20px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .rickandmorty .container-r {
+    max-width: 750px;
+  }
+  .rickandmorty {
+    .App-header {
+      padding: 0px 20px;
+    }
+    .main {
+      margin-top: 20px;
+      padding: 0px 20px;
+      .random-char {
+        flex-wrap: wrap;
+        gap: 20px;
+        max-height: 100%;
+        justify-content: center;
+        .char-block {
+          width: 100%;
+          .description-block {
+            font-size: 26px;
+            line-height: 140%;
+          }
+        }
+        .renew_block {
+          width: 100%;
+          flex-direction: row;
+          .renew-text {
+            font-size: 22px;
+          }
+        }
+      }
+      .main-flex {
+        padding: 20px;
+        justify-content: space-between;
+
+        .wrap {
+          width: 55%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+
+          .characters-block {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .character-card {
+              height: 450px;
+              max-width: 350px;
+              padding: 15px;
+              .character-img {
+                width: 300px;
+                height: 300px;
+              }
+              .char-descr {
+                display: none;
+              }
+              .linkto {
+                width: 120px;
+              }
+            }
+          }
+        }
+        .left-side {
+          width: 40%;
+
+          .left-side-wrap {
+            .single-char-info {
+              font-size: 18px;
+              .single-char-block {
+                .single-char-img {
+                  align-self: center;
+                  width: 220px;
+                  height: 220px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .episodes {
+      .episodes-list {
+        padding: 0 20px;
+        .episode-single {
+          font-display: column;
+          flex-wrap: wrap;
+
+          align-items: center;
+          .episode-wrap {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
+            .button.episode-heroes {
+              margin: 0 auto;
+            }
+          }
+          .person-episode {
+            justify-content: center;
+            width: 100%;
+            .lin {
+              display: flex;
+              justify-content: center;
+              .person-item {
+                width: 300px;
+                min-height: 470px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .person-image {
+                  width: 90%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .single-page {
+      height: 100%;
+      padding: 0 20px;
+      .single-page-wrap {
+        .single-img {
+          width: 320px;
+          height: 320px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .rickandmorty .container-r {
+    max-width: 540px;
+  }
+  .rickandmorty {
+    .App-header {
+      padding: 0px 20px;
+    }
+    .main {
+      margin-top: 20px;
+      padding: 0px 20px;
+      .random-char {
+        flex-wrap: wrap;
+        gap: 20px;
+        max-height: 100%;
+        justify-content: center;
+        .char-block {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          .char-img {
+            width: 300px;
+            height: 300px;
+          }
+          .description-block {
+            text-align: center;
+            font-size: 22px;
+            line-height: 140%;
+          }
+        }
+        .renew_block {
+          width: 100%;
+          align-items: center;
+          gap: 20px;
+          .renew-text {
+            font-size: 24px;
+            text-align: center;
+          }
+        }
+      }
+      .main-flex {
+        padding: 20px;
+        .wrap {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+          .characters-block {
+            width: 100%;
+            .character-card {
+              height: fit-content;
+              max-width: 390px;
+              padding: 25px;
+              .character-img {
+                width: 330px;
+                height: 330px;
+              }
+              .char-descr {
+                width: 330px;
+                margin-top: 10px;
+                font-size: 20px;
+              }
+              .linkto {
+                width: 120px;
+              }
+            }
+          }
+        }
+        .left-side {
+          width: 40%;
+          display: none;
+        }
+      }
+    }
+    .episodes {
+      .episodes-list {
+        padding: 0 20px;
+        .episode-single {
+          font-display: column;
+          flex-wrap: wrap;
+          align-items: center;
+          .episode-wrap {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
+            .box {
+              .episode-episode {
+                text-align: center;
+                font-size: 16px;
+              }
+              .episode-name {
+                text-align: center;
+                font-size: 16px;
+              }
+              .episode-drop {
+                text-align: center;
+                font-size: 16px;
+              }
+            }
+            .button.episode-heroes {
+              margin: 0 auto;
+            }
+          }
+          .person-episode {
+            justify-content: center;
+            width: 100%;
+            .lin {
+              display: flex;
+              justify-content: center;
+              .person-item {
+                width: 90%;
+                min-height: 470px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .person-image {
+                  width: 90%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .single-page {
+      height: 100%;
+      padding: 0 20px;
+      .single-page-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .single-img {
+          border-radius: 5px;
+          width: 350px;
+          height: 350px;
+        }
+        .single-block {
+          gap: 15px;
+          align-items: center;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .rickandmorty .container-r {
+    max-width: 93%;
+  }
+  .rickandmorty {
+    .App-header {
+      padding: 0px 10px;
+      .logo {
+        .logo-img {
+          width: 90%;
+          height: 90%;
+          svg {
+            width: 100px;
+            height: 45px;
+          }
+        }
+      }
+      .nav-header {
+        .nav-item {
+          font-size: 14px;
+        }
+      }
+    }
+    .main {
+      margin-top: 20px;
+      padding: 0px 10px;
+      .random-char {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-height: 100%;
+        justify-content: center;
+        .char-block {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          .char-img {
+            width: 100%;
+            height: auto;
+          }
+          .description-block {
+            text-align: center;
+            font-size: 22px;
+            line-height: 140%;
+          }
+        }
+        .renew_block {
+          width: 100%;
+          align-items: center;
+          gap: 20px;
+          .renew-text {
+            font-size: 24px;
+            text-align: center;
+          }
+        }
+      }
+      .main-flex {
+        padding: 20px;
+        justify-content: space-between;
+        .wrap {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+
+          .characters-block {
+            width: 100%;
+            justify-content: center;
+            .character-card {
+              display: flex;
+              height: fit-content;
+              max-width: 400px;
+              padding: 20px;
+              align-items: center;
+              flex-direction: column;
+              .character-img {
+                width: 95%;
+                height: auto;
+              }
+              .char-descr {
+                margin-top: 10px;
+                font-size: 18px;
+              }
+              .linkto {
+                width: 120px;
+              }
+            }
+          }
+        }
+        .left-side {
+          width: 40%;
+          display: none;
+
+          .left-side-wrap {
+            .single-char-info {
+              font-size: 18px;
+              .single-char-block {
+                .single-char-img {
+                  align-self: center;
+                  width: 220px;
+                  height: 220px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .episodes {
+      .episodes-list {
+        padding: 0 10px;
+        .episode-single {
+          font-display: column;
+          flex-wrap: wrap;
+          align-items: center;
+          .episode-wrap {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            align-items: center;
+            .box {
+              .episode-episode {
+                text-align: center;
+                font-size: 16px;
+              }
+              .episode-name {
+                text-align: center;
+                font-size: 16px;
+              }
+
+              .episode-drop {
+                text-align: center;
+                font-size: 16px;
+              }
+            }
+            .button.episode-heroes {
+              margin: 0 auto;
+            }
+          }
+          .person-episode {
+            padding: 0;
+            justify-content: center;
+            .person-item {
+              width: 90%;
+              min-height: 400px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              .lin {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .person-image {
+                  width: 90%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .single-page {
+      height: 100%;
+      padding: 0 10px;
+      .single-page-wrap {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .single-img {
+          border-radius: 5px;
+          width: 90%;
+          height: auto;
+        }
+        .single-block {
+          gap: 15px;
+          align-items: center;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

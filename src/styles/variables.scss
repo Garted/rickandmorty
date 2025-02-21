@@ -1,0 +1,16 @@
+$button-color: #c20606;
+$whiteboxshadow: 2px 3px 10px 6px rgb(207, 213, 169);
+$blackboxshadow: 2px 3px 10px 4px rgb(0, 0, 0);
+
+.button {
+  display: block;
+  width: 125px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: $button-color;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
